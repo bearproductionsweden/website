@@ -151,3 +151,108 @@ h2 { font-size: clamp(48px, 6vw, 80px); letter-spacing: -.07em; line-height: .8;
 @keyframes moon-pulse { 50% { transform: scale(1.07); } }
 @keyframes bear-bob { 0%, 100% { transform: translateY(0) scale(var(--bear-scale)); } 50% { transform: translateY(-8px) scale(var(--bear-scale)); } }
 @keyframes blink { 50% { opacity: .35; } }
+
+/* Bearproductions signal-studio look — shared with the YouTube identity. */
+body {
+  background-color: #050a19;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(105, 228, 255, .16) 0 1px, transparent 2px),
+    radial-gradient(circle at 83% 13%, rgba(255, 122, 92, .75) 0 2px, transparent 3px),
+    radial-gradient(circle at 77% 72%, rgba(174, 250, 124, .25) 0 1px, transparent 3px),
+    linear-gradient(rgba(58, 116, 176, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 116, 176, .12) 1px, transparent 1px),
+    radial-gradient(circle at 50% -15%, #112c59 0%, #070e23 44%, #050a19 78%);
+  background-size: 160px 160px, 230px 230px, 180px 180px, 26px 26px, 26px 26px, auto;
+}
+
+.site-header {
+  background: rgba(8, 17, 40, .9);
+  border-color: #264e8c;
+  box-shadow: 6px 6px 0 #ff7a5c;
+}
+
+.brand { color: #e9f8ff; letter-spacing: -.03em; }
+.brand-accent { color: var(--lime); }
+.brand-mark {
+  background: #061127;
+  border-color: var(--cyan);
+  box-shadow: 3px 3px 0 #132a58;
+  overflow: hidden;
+}
+.brand-mark img { display: block; height: 100%; image-rendering: pixelated; object-fit: cover; width: 100%; }
+.site-nav a:hover, .footer-links a:hover { background: var(--lime); box-shadow: 2px 2px 0 #071020; }
+.header-cta { background: var(--lime); border-color: #10254b; }
+
+h1 em, h2 em { color: var(--lime); text-shadow: 3px 3px 0 #173c78; }
+.eyebrow { color: #9ccfea; }
+.eyebrow-dot { background: var(--lime); box-shadow: 2px 2px 0 #153266; }
+.hero-intro { color: #bfd0e7; }
+.button { border-color: #183968; box-shadow: 5px 5px 0 #020613; }
+.button-primary { background: var(--lime); }
+.button-primary span { color: #ff7a5c; }
+.text-link { border-color: var(--cyan); }
+
+.hero-art {
+  background: radial-gradient(circle at 50% 55%, rgba(38, 105, 166, .38), transparent 42%), #061127;
+  border-color: #23477e;
+  box-shadow: 9px 9px 0 #ff7a5c;
+}
+.hero-art::before {
+  background-image: linear-gradient(rgba(74, 151, 210, .16) 1px, transparent 1px), linear-gradient(90deg, rgba(74, 151, 210, .16) 1px, transparent 1px);
+  opacity: 1;
+}
+.hero-art::after { border-color: rgba(105, 228, 255, .7); }
+.orbit-one { border-color: rgba(105, 228, 255, .75); }
+.orbit-two { border-color: rgba(255, 122, 92, .8); }
+.hero-moon { background: var(--cyan); box-shadow: 0 0 18px rgba(105, 228, 255, .55); height: 54px; left: 16%; top: 16%; width: 54px; }
+.hero-moon::after { background: #061127; height: 43px; left: -9px; top: -5px; width: 43px; }
+.hero-bear {
+  background: transparent;
+  bottom: 52px;
+  clip-path: none;
+  height: 275px;
+  left: calc(50% - 137px);
+  overflow: hidden;
+  width: 275px;
+}
+.hero-bear img { display: block; height: 100%; image-rendering: pixelated; object-fit: cover; width: 100%; }
+.art-label { color: #061127; }
+.art-label-top { background: var(--lime); }.art-label-bottom { background: var(--cyan); color: #061127; }
+.art-star { background: var(--cyan); box-shadow: 0 0 12px var(--cyan); height: 7px; position: absolute; width: 7px; z-index: 1; }
+.art-star::after { background: inherit; content: ''; height: 21px; left: 3px; position: absolute; top: -7px; width: 1px; }
+.art-star-one { right: 17%; top: 24%; }.art-star-two { bottom: 19%; left: 15%; transform: scale(.7); }
+
+.ticker { background: #0b1734; border-color: #2a609b; color: var(--lime); }
+.ticker-track i { color: var(--cyan); }
+.section-note { border-color: var(--cyan); color: #b9cee5; }
+.filter-button { background: #0b1837; border-color: #285c9a; box-shadow: 3px 3px 0 #020613; }
+.filter-button:hover, .filter-button.is-active { background: var(--lime); }
+
+.project-card { border-color: #244d85; box-shadow: 7px 7px 0 #020613; }
+.project-card-dark, .project-card-lilac, .project-card-cream { background: linear-gradient(145deg, #102756, #09152f 72%); color: var(--ink); }
+.project-card:hover { box-shadow: 11px 11px 0 #020613; }
+.project-topline, .project-card-dark .project-topline { color: #a9c8e7; }
+.project-status, .project-card-lilac .project-status, .project-card-cream .project-status { background: #183b70; color: var(--lime); }
+.project-visual { border-color: #295991; }
+.visual-caption { background: #061127; color: #bdefff; }
+.visual-app { background: #081630; }.visual-app::after { border-color: #69e4ff; }
+.visual-game { background: #0b1a3c; }.visual-game::before { background: #10295a; border-color: #69e4ff; box-shadow: 7px 7px 0 #ff7a5c; }
+.visual-game::after { background: #25448a; border-color: #69e4ff; }.visual-lab { background: #081630; }
+.project-copy p, .project-card-dark .project-copy p { color: #b8cce2; }
+
+.journal-card { background: linear-gradient(120deg, #081630, #10275a); border-color: #28568e; box-shadow: 8px 8px 0 #ff7a5c; }
+.journal-card::before { background: radial-gradient(circle, rgba(105, 228, 255, .65) 0 1px, transparent 2px); background-size: 24px 24px; content: ''; inset: 0; opacity: .35; pointer-events: none; position: absolute; }
+.journal-stamp { background: var(--lime); border-color: #143264; box-shadow: 5px 5px 0 var(--cyan); }.journal-stamp span { color: #143264; }
+.journal-content h2 em { color: var(--lime); text-shadow: 3px 3px 0 #204f91; }
+.button-light { background: var(--cyan); }
+
+.about-mark { background: #10275a; border-color: #285b97; box-shadow: 5px 5px 0 #ff7a5c; color: var(--lime); }
+.about-text { color: #b8cce2; }
+.closing-inner { background: radial-gradient(circle at 50% 120%, #244a85, transparent 57%), #091735; border-color: #285b97; box-shadow: 8px 8px 0 #ff7a5c; }
+.closing-inner::before, .closing-inner::after { background: var(--lime); }.closing-inner h2 em { color: var(--lime); text-shadow: 4px 4px 0 #204f91; }
+.site-footer { border-color: #285b97; }.site-footer p { color: #91afd0; }
+
+@media (max-width: 520px) {
+  .hero-bear { bottom: 30px; height: 230px; left: calc(50% - 115px); width: 230px; }
+  .hero-moon { left: 12%; top: 12%; }
+}
