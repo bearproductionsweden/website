@@ -16,6 +16,7 @@
   --shadow: #02030a;
   --mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   --sans: 'Space Grotesk', system-ui, sans-serif;
+  --display: 'Space Grotesk', system-ui, sans-serif;
   --pixel: 'Pixelify Sans', ui-monospace, monospace;
 }
 
@@ -78,9 +79,9 @@ button { font: inherit; }
 .eyebrow { align-items: center; color: var(--muted); display: flex; font-family: var(--mono); font-size: 10px; font-weight: 500; gap: 9px; letter-spacing: .1em; margin: 0 0 23px; text-transform: uppercase; }
 .eyebrow-dot { background: var(--orange); box-shadow: 2px 2px 0 var(--shadow); display: inline-block; height: 8px; width: 8px; }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2, h3 { font-family: var(--pixel); }
-h1 { font-size: clamp(62px, 8vw, 106px); letter-spacing: -.075em; line-height: .78; margin-bottom: 36px; max-width: 730px; }
-h1 em, h2 em { color: var(--orange); font-family: inherit; font-style: normal; text-shadow: 3px 3px 0 var(--shadow); }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; }
+h1 { font-size: clamp(60px, 8vw, 104px); letter-spacing: -.07em; line-height: .88; margin-bottom: 36px; max-width: 730px; }
+h1 em, h2 em { color: var(--orange); font-family: inherit; font-style: normal; text-shadow: 2px 2px 0 var(--shadow); }
 .hero-intro { color: var(--muted); font-size: 16px; line-height: 1.75; max-width: 455px; }
 .hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 24px; margin-top: 37px; }
 .button { align-items: center; border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--shadow); display: inline-flex; font-family: var(--pixel); font-size: 14px; gap: 13px; justify-content: center; padding: 13px 16px; transition: box-shadow .15s ease, transform .15s ease; }
@@ -112,7 +113,7 @@ h1 em, h2 em { color: var(--orange); font-family: inherit; font-style: normal; t
 .ticker-track i { color: var(--orange); font-family: var(--pixel); font-size: 19px; font-style: normal; line-height: 0; }
 
 .section-heading { align-items: flex-end; display: flex; justify-content: space-between; margin-bottom: 43px; }
-h2 { font-size: clamp(48px, 6vw, 80px); letter-spacing: -.07em; line-height: .8; margin-bottom: 0; }
+h2 { font-size: clamp(46px, 6vw, 78px); letter-spacing: -.065em; line-height: .9; margin-bottom: 0; }
 .section-note { border-left: 3px solid var(--orange); color: var(--muted); font-size: 13px; line-height: 1.65; max-width: 270px; padding-left: 13px; }
 .filter-row { display: flex; gap: 10px; margin-bottom: 27px; }
 .filter-button { background: var(--paper); border: 2px solid var(--cyan); box-shadow: 3px 3px 0 var(--shadow); color: var(--ink); cursor: pointer; font-family: var(--mono); font-size: 11px; font-weight: 700; padding: 9px 14px; text-transform: uppercase; transition: background .15s ease, box-shadow .15s ease, transform .15s ease; }
