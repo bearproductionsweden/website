@@ -260,3 +260,24 @@ h1 em, h2 em { color: var(--lime); text-shadow: 2px 2px 0 #173c78; }
   .hero-bear { bottom: 30px; height: 230px; left: calc(50% - 115px); width: 230px; }
   .hero-moon { left: 12%; top: 12%; }
 }
+
+/* Mahjong board preview */
+.visual-game {
+  background-color: #07142e;
+  background-image:
+    radial-gradient(circle at 50% 30%, rgba(255, 227, 109, .12), transparent 42%),
+    linear-gradient(rgba(105, 228, 255, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(105, 228, 255, .12) 1px, transparent 1px);
+  background-size: auto, 20px 20px, 20px 20px;
+}
+.visual-game::before, .visual-game::after { content: none; }
+.mahjong-board-label { color: var(--cyan); font-family: var(--mono); font-size: 9px; font-weight: 700; left: 14px; letter-spacing: .1em; position: absolute; text-transform: uppercase; top: 13px; }
+.mahjong-tile-grid { display: grid; gap: 7px; grid-template-columns: repeat(4, 1fr); margin-top: 22px; transform: rotate(-4deg); width: 245px; z-index: 2; }
+.mahjong-tile { align-items: center; background: linear-gradient(145deg, #121b37, #060a18); border: 2px solid var(--yellow); box-shadow: 3px 3px 0 #020613; display: flex; font-family: var(--sans); font-size: 34px; font-weight: 700; height: 60px; justify-content: center; line-height: 1; }
+.mahjong-tile:nth-child(2), .mahjong-tile:nth-child(6) { transform: translateY(-3px); }.mahjong-tile:nth-child(3), .mahjong-tile:nth-child(7) { transform: translateY(2px); }.mahjong-tile:nth-child(4), .mahjong-tile:nth-child(8) { transform: translateY(-2px); }
+.tile-coral { color: var(--orange); }.tile-jade { color: #72d8ad; }.tile-gold { color: var(--yellow); }
+.mahjong-tray { border: 2px solid var(--lime); bottom: 12px; color: var(--lime); font-family: var(--mono); font-size: 8px; font-weight: 700; left: 13px; letter-spacing: .08em; padding: 7px 9px; position: absolute; right: 13px; text-transform: uppercase; }
+
+@media (max-width: 520px) {
+  .mahjong-tile-grid { width: 235px; }.mahjong-tile { font-size: 31px; height: 58px; }
+}
